@@ -47,12 +47,12 @@ async function init() {
   setTitleAndValue(passwordElement, "Hi, my password is", user.login.password);
 
   //add event listener
-  nameElement.addEventListener("click", showData);
-  emailElement.addEventListener("click", showData);
-  birthdayElement.addEventListener("click", showData);
-  phoneElement.addEventListener("click", showData);
-  addressElement.addEventListener("click", showData);
-  passwordElement.addEventListener("click", showData);
+  nameElement.addEventListener("mouseenter", showData);
+  emailElement.addEventListener("mouseenter", showData);
+  birthdayElement.addEventListener("mouseenter", showData);
+  phoneElement.addEventListener("mouseenter", showData);
+  addressElement.addEventListener("mouseenter", showData);
+  passwordElement.addEventListener("mouseenter", showData);
 
   //set default message
   const messageElement = document.getElementById("message");

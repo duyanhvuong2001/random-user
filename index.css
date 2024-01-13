@@ -1,72 +1,82 @@
-#profile {
-  max-width: 400px;
-  margin: 0 auto;
-  text-align: center;
-  font-family: "Arial", sans-serif;
+body {
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
+#profile {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+}
 #avatar {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  margin-bottom: 10px;
+  margin: 0 auto 20px; /* Center the avatar horizontally */
 }
 
 #message {
   font-size: 18px;
-  color: #333;
-  margin-bottom: 20px;
+  color: #555;
+  margin: auto;
 }
 
 ul {
   list-style: none;
   padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
-li {
-  margin-bottom: 10px;
-}
-
-#name {
-  font-weight: bold;
+li::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
 }
 
 #name::before {
+  border-radius: 50%;
   content: "\1F464"; /* Unicode character for a person icon */
-  font-size: 20px;
-  margin-right: 5px;
-}
-
-#email {
-  color: #007bff;
 }
 
 #email::before {
+  border-radius: 50%;
   content: "\2709"; /* Unicode character for an envelope icon */
-  font-size: 20px;
-  margin-right: 5px;
 }
 
 #address::before {
+  border-radius: 50%;
   content: "\1F4CD"; /* Unicode character for a document icon */
-  font-size: 20px;
-  margin-right: 5px;
 }
 
 #birthday::before {
+  border-radius: 50%;
   content: "\1F382"; /* Unicode character for a birthday cake icon */
-  font-size: 20px;
-  margin-right: 5px;
 }
 
 #phone::before {
+  border-radius: 50%;
   content: "\1F4DE"; /* Unicode character for a phone icon */
-  font-size: 20px;
-  margin-right: 5px;
 }
 
 #password::before {
+  border-radius: 50%;
   content: "\1F511"; /* Unicode character for a key icon */
-  font-size: 20px;
-  margin-right: 5px;
+}
+
+li:hover {
+  background-color: #ccc; /* Change the background color on hover */
+  color: #333; /* Change the text color on hover */
 }
