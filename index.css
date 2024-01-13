@@ -31,8 +31,42 @@ li {
   font-weight: bold;
 }
 
+#name::before {
+  content: "\1F464"; /* Unicode character for a person icon */
+  font-size: 20px;
+  margin-right: 5px;
+}
+
 #email {
   color: #007bff;
 }
 
-/* Add more styles as needed for other elements like address, birthday, phone, password */
+#email::before {
+  content: "\2709"; /* Unicode character for an envelope icon */
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+#address::before {
+  content: "\1F4CD"; /* Unicode character for a document icon */
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+#birthday::before {
+  content: "\1F382"; /* Unicode character for a birthday cake icon */
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+#phone::before {
+  content: "\1F4DE"; /* Unicode character for a phone icon */
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+#password::before {
+  content: "\1F511"; /* Unicode character for a key icon */
+  font-size: 20px;
+  margin-right: 5px;
+}

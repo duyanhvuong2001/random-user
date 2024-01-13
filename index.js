@@ -53,6 +53,13 @@ async function init() {
   phoneElement.addEventListener("click", showData);
   addressElement.addEventListener("click", showData);
   passwordElement.addEventListener("click", showData);
+
+  //set default message
+  const messageElement = document.getElementById("message");
+  messageElement.textContent =
+    nameElement.getAttribute("data-title") +
+    " " +
+    nameElement.getAttribute("data-value");
 }
 
 const showData = (e) => {
